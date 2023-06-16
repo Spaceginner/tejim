@@ -59,3 +59,21 @@ def parse(content: str) -> dict:
             skip = 2
 
     return stored
+
+
+def generate(store: dict, _level: int = 0) -> str:
+    contents = ""
+
+    for key in store:
+        if isinstance(store[key], str) and '\n' in store[key]:
+            contents += "    " * _level + key + '!=\n\n' \
+                        + store[key].strip() + '\n\n' \
+                        + "    " * _level + f'\\{key}\n'
+        elif isinstance(store[key], dict):
+            contents += "    " * _level + key + ':\n' \
+                        + generate(store[key], _level+1) \
+                        + "    " * _level + f'\\{key}\n\n'
+        else:
+            contents += "    " * _level + key + '= ' + store[key].strip() + '\n'
+
+    return contents
