@@ -1,0 +1,10 @@
+time:
+    timezone= +5
+    format= 24
+\time
+
+locale:
+    encoding= utf-8
+    language= en
+    layout= qwert
+\locale
