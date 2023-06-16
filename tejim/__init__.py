@@ -74,6 +74,8 @@ def generate(store: dict, _level: int = 0) -> str:
                         + generate(store[key], _level+1) \
                         + "    " * _level + f'\\{key}\n\n'
         else:
-            contents += "    " * _level + key + '= ' + store[key].strip() + '\n'
+            contents += "    " * _level + key + '= ' \
+                        + (store[key].strip() if isinstance(store[key], str) else str(store[key])) \
+                        + '\n'
 
     return contents
