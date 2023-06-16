@@ -14,3 +14,7 @@ its specification you can find [here](https://github.com/Spaceginner/tejim/wiki/
   - integer
   - floating-point
   - string
+
+## why?
+
+why not™ duh
