@@ -1,0 +1,11 @@
+name= John Doe
+age= 30
+
+address:
+    street= 123 Main Street
+    city= San Francisco
+    state= CA
+    zip code= 94105
+\address
+
+phone number= 123-456-7890
