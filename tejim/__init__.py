@@ -70,7 +70,8 @@ def generate(store: dict, _level: int = 0) -> str:
                         + store[key].strip() + '\n\n' \
                         + "    " * _level + f'\\{key}\n'
         elif isinstance(store[key], dict):
-            contents += "    " * _level + key + ':\n' \
+            contents += ('\n' if _level == 0 else '') \
+                        + "    " * _level + key + ':\n' \
                         + generate(store[key], _level+1) \
                         + "    " * _level + f'\\{key}\n\n'
         else:
