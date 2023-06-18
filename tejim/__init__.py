@@ -1,6 +1,6 @@
 import os
 
-from .data_convert import convert
+from ._data_convert import convert
 
 
 def parse(content: str) -> dict:
