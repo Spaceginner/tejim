@@ -4,6 +4,12 @@ from .data_convert import convert
 
 
 def parse(content: str) -> dict:
+    """
+    will parse contents of the tejim file and return its dictionary representation
+
+    :param content: the contents representing tejim file
+    :return: dictionary representation of the contents
+    """
     tokens = []
 
     # adapted from Spaceginner/opyn
@@ -62,6 +68,12 @@ def parse(content: str) -> dict:
 
 
 def generate(store: dict, _level: int = 0) -> str:
+    """
+    generates a tejim file based on the store dictionary
+
+    :param store: dictionary which has to be converted into a tejim file's representation
+    :return: contents of the tejim file representing the store dictionary
+    """
     contents = ""
 
     for key in store:
