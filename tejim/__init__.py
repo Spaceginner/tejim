@@ -1,3 +1,7 @@
+"""
+a configuration file standart the goal of which is to be simpistic, yet still robust enough.
+"""
+
 import os
 
 from ._data_convert import convert

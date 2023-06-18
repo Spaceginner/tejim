@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tejim"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="Ivan \"Spaceginner\"", email="ivan.demian2009@gmail.com" },
 ]
-description = "A configuration file standart the goal of which is to be simpistic, yet still robust enough."
+description = "the next YAML killer!!111!!!!111!"
 readme = "readme.md"
 requires-python = ">=3.10"
 classifiers = [
